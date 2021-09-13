@@ -1,0 +1,22 @@
+on:
+  push:
+    branches:
+      - master
+jobs:
+  test:
+    name: Testing Actions
+    runs-on: macOS-10.15
+    defaults:
+      run:
+        working-directory: ./
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Use Xcode 12.4
+        run: sudo xcode-select -switch /Applications/Xcode_12.4.app
+      - name: Add talk-to repo
+        run: pod repo add talk-to git@github.com:talk-to/private-cocoapod-specs.git
+      - name: Pod repo list
+        run: pod repo list --verbose
+      - name: Get cocoapod dependencies
+        run: pod install
