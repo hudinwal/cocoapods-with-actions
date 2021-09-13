@@ -1,0 +1,46 @@
+PODS:
+  - Alamofire (4.7.3)
+  - CryptoSwift (0.11.0)
+  - FlockContact (0.1.6):
+    - Alamofire (= 4.7.3)
+    - FlockSwiftUtils
+    - XCGLogger
+  - FlockSwiftUtils (3.0.1):
+    - CryptoSwift (~> 0.11.0)
+    - XCGLogger (~> 6.0.4)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - SwiftLint (0.44.0)
+  - XCGLogger (6.0.4):
+    - XCGLogger/Core (= 6.0.4)
+  - XCGLogger/Core (6.0.4):
+    - ObjcExceptionBridging
+
+DEPENDENCIES:
+  - FlockContact
+  - SwiftLint
+
+SPEC REPOS:
+  "git@github.com:talk-to/private-cocoapod-specs.git":
+    - FlockContact
+    - FlockSwiftUtils
+  https://cdn.cocoapods.org/:
+    - Alamofire
+    - CryptoSwift
+    - ObjcExceptionBridging
+    - SwiftLint
+    - XCGLogger
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  CryptoSwift: ad5208dd2aae0a764ea4ce2c2d34bd067cae67f0
+  FlockContact: bbdc29f3f755dcf34cda11172c6de4139e360b72
+  FlockSwiftUtils: e9d521b7a598cd8caac5a24e9035ab671df43f56
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  SwiftLint: e96c0a8c770c7ebbc4d36c55baf9096bb65c4584
+  XCGLogger: 4fc1bc0bdd5828cb8dc8da7a843536cda1bea8f3
+
+PODFILE CHECKSUM: e633b2423a071c913947a69d2b09fb2a34495918
+
+COCOAPODS: 1.10.2
